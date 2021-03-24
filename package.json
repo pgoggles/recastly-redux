@@ -8,7 +8,8 @@
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
     "start": "live-server",
-    "build": "webpack -d --watch"
+    "build": "webpack -d --watch",
+    "bundle": "npm start & npm test & npm run build"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
@@ -21,7 +22,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-redux": "^5.0.6",
+    "react-redux": "^5.1.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },
